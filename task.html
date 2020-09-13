@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+
+  <body>
+      <div class="container">
+        <div class="row">
+            <h5>Task List</h5>
+            <div class="input-field col s12">
+                <form action="#" id="task-form">
+                  <label class="active" for="task">New task</label>
+                    <input placeholder="Add another task" id="task-input" type="text" class="validate">
+                    <!--<a class="waves-effect waves-light btn" type="submit">ADD TASK</a>-->
+                    <input type="submit" value="Add Task" class="btn">
+                </form>
+            </div>
+          </div>
+
+          <div class="collection-header">
+            <h4>Tasks</h4>
+            <div class="row">
+                <div class="col s4">
+                  <label class="active" for="task">Filter Task</label>
+                  <input placeholder="Find task" id="filter-input" type="text" class="validate">
+                </div>
+            </div>
+            <ul class="collection with-header">
+            </ul>
+          </div>
+          <a class="clear-task btn" href="#">Clear Task</a>
+      </div>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="js/task.js"></script>
+  </body>
+</html>
